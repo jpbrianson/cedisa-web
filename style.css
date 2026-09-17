@@ -90,12 +90,30 @@
     transform:none;
     min-width:0;
     box-shadow:none;
+    opacity:0;
+    visibility:hidden;
+    max-height:0;
+    overflow:hidden;
+    padding:0 0 0 15px;
+    background:transparent;
+    transition:max-height .25s ease, opacity .2s ease;
+}
+
+.header .nav-dropdown.open .nav-dropdown-menu{
     opacity:1;
     visibility:visible;
-    display:block;
-    padding:0 0 5px 15px;
-    background:transparent;
-  }
+    max-height:120px;
+}
+
+.header .nav-dropdown-menu a{
+    padding:8px 10px;
+    font-size:14px;
+}
+
+.header nav > a,
+.header nav .nav-dropdown > a{
+    padding:11px 10px;
+}
 
   .header .nav-dropdown-menu a{
     padding:10px;
