@@ -123,3 +123,62 @@
     display:none;
   }
 }
+.plantel{
+  padding:80px 6%;
+  background:#f7f9fb;
+}
+
+.plantel .section-title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.plantel .section-title h2{
+  color:#072b42;
+}
+
+.plantel-grid{
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.profesional-card{
+  background:#fff;
+  padding:28px 25px;
+  border-radius:12px;
+  border:1px solid #e5ebef;
+  text-align:center;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.profesional-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(7,43,66,.12);
+}
+
+.profesional-card h3{
+  margin:0 0 8px;
+  color:#072b42;
+  font-size:18px;
+}
+
+.profesional-card p{
+  margin:0;
+  color:#0996df;
+  font-size:14px;
+  font-weight:600;
+}
+
+@media(max-width:768px){
+  .plantel{
+    padding:60px 20px;
+  }
+
+  .plantel-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+}
